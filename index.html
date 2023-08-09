@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>URC2DM</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="sidebar" class="sidebar" data-estado="close">
+        <a id="btnClose" href="javascript:void(0)" class="btnClose">&times;</a>
+        <h2>Opciones</h2>
+         <div>
+            <div >
+                <label for="in1">Dimensión</label>
+                <input id="in1" type="number" value="256" min="256" max="61440" step="64">
+            </div>
+            <div>
+                <label for="in2">Rectangulo</label>
+                <input id="in2" type="checkbox">
+            </div>
+            <div>
+                <label for="in3">Espaciado</label>
+                <input id="in3" type="number" value="2" min="0" max="10">
+            </div>
+            <div>
+                <label for="in4">Color DM</label>
+                <input id="in4" type="color" value="#000000">
+            </div>
+            <div>
+                <label for="in5">Solo 12 Caracteres</label>
+                <input id="in5" type="checkbox" checked="checked">
+            </div>
+            <div>
+                <label for="in6">Solo Números</label>
+                <input id="in6" type="checkbox" checked="checked">
+            </div>
+         </div>   
+    </div>
+
+    <div id="container">
+        <div id="header">
+            <input id="urc"type="text"></input>
+            <button id="btnGenerar">Generar</button>
+            <button id="btnBorrar">Borrar</button>
+            <button id="btnOpciones">Opciones</button>
+        </div>
+        <div id="response"></div>
+    </div>
+
+    <footer>
+            <p>URC2DM</p>
+    </footer>
+
+    <script src="./datamatrix.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
