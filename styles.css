@@ -153,3 +153,12 @@ footer p{
   background-color: #3B3F48;
   color: #fff;
 }
+
+/*Soporte Firefox*/
+#in1{
+    width: 81px;
+}
+
+#in3{
+    width: 60px;
+}
