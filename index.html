@@ -9,41 +9,49 @@
 <body>
     <div id="sidebar" class="sidebar" data-estado="close">
         <a id="btnClose" href="javascript:void(0)" class="btnClose">&times;</a>
-        <h2>Opciones</h2>
+        <h2 id="optionsLabel">Options</h2>
          <div>
             <div >
-                <label for="in1">Dimensión</label>
-                <input id="in1" type="number" value="256" min="256" max="61440" step="64">
+                <label id="in1Label" for="in1">Dimension</label>
+                <input id="in1" type="number" min="256" max="61440" step="64">
             </div>
             <div>
-                <label for="in2">Rectangulo</label>
+                <label id="in2Label" for="in2">Rectangle</label>
                 <input id="in2" type="checkbox">
             </div>
             <div>
-                <label for="in3">Espaciado</label>
-                <input id="in3" type="number" value="2" min="0" max="10">
+                <label id="in3Label" for="in3">Padding</label>
+                <input id="in3" type="number" min="0" max="10">
             </div>
             <div>
-                <label for="in4">Color DM</label>
-                <input id="in4" type="color" value="#000000">
+                <label id="in4Label" for="in4">Color</label>
+                <input id="in4" type="color">
             </div>
             <div>
-                <label for="in5">Solo 12 Caracteres</label>
-                <input id="in5" type="checkbox" checked="checked">
+                <label id="in5Label" for="in5">Only 12 Characters</label>
+                <input id="in5" type="checkbox">
             </div>
             <div>
-                <label for="in6">Solo Números</label>
-                <input id="in6" type="checkbox" checked="checked">
+                <label id="in6Label" for="in6">Only Numbers</label>
+                <input id="in6" type="checkbox">
+            </div>
+            <div class="LanguageGroup">
+                <label id="languageLabel">Language</label>
+                <div class="btnLangGroup">
+                    <button id="bntLangEN" class="btnLang selected">EN</button>
+                    <button id="bntLangES" class="btnLang">ES</button>
+                    <input id="in7" type="text" hidden>
+                </div>
             </div>
          </div>   
     </div>
 
     <div id="container">
         <div id="header">
-            <input id="urc"type="text"></input>
-            <button id="btnGenerar">Generar</button>
-            <button id="btnBorrar">Borrar</button>
-            <button id="btnOpciones">Opciones</button>
+            <input id="urc" type="text"></input>
+            <button id="btnGenerate">Generate</button>
+            <button id="btnClear">Clear</button>
+            <button id="btnOptions">Options</button>
         </div>
         <div id="response"></div>
     </div>
